@@ -5,9 +5,8 @@ importScripts('/service-worker-boilerplate/app/js/protocols/protocol_helper.js')
 function ServiceAPI(callback) {
   var kWorkerUrl = '/service-worker-boilerplate/app/service_worker.js';
   var kWorkerOptions = {
-    'scope': [ '/service-worker-boilerplate' ]
+    'scope': [ '/service-worker-boilerplate/app' ]
   };
-
   navigator.serviceWorker.register(kWorkerUrl, kWorkerOptions).then(
     (function onSuccess(worker) {
       // XXX This should be done automagically by the platform.
