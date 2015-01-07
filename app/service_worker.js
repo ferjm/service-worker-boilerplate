@@ -23,10 +23,6 @@ worker.oninstall = function(e) {
 worker.onfetch = function(e) {
   debug(e.type + ': ' + e.request.url);
 
-  if (SmartWorkers.handle(e)) {
-    return;
-  }
-
   e.respondWith(
     caches.match(e.request.url).then(function(response) {
       if (!response) {
