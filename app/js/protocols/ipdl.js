@@ -1,6 +1,6 @@
 'use strict';
 
-importScripts('/service_worker_boilerplate/app/js/protocols/ipdl_parser.js');
+importScripts('/service-worker-boilerplate/app/js/protocols/ipdl_parser.js');
 
 function IPDL(name) {
   var ast = parser.parse(this._getFileContent(name));
@@ -51,7 +51,7 @@ IPDL.prototype.getOtherSide = function(sides) {
 IPDL.prototype._getFileContent = function(name) {
   var xhr = new XMLHttpRequest();
   var filename =
-    '/service_worker_boilerplate/app/js/protocols/ipdl/' +
+    '/service-worker-boilerplate/app/js/protocols/ipdl/' +
     'P' +
     name.charAt(0).toUpperCase() + name.slice(1) +
     '.ipdl';

@@ -1,7 +1,7 @@
 'use strict';
 
 //importScripts('/sms-cloud/app/js/service/cache-polyfill.js');
-importScripts('/service_worker_boilerplate/app/js/string-polyfill.js');
+importScripts('/service-worker-boilerplate/app/js/string-polyfill.js');
 
 // XXX Firefox compat with latest spec
 if ('getServiced' in clients) {

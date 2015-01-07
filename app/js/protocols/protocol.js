@@ -1,7 +1,7 @@
 'use strict';
 
-importScripts('/service_worker_boilerplate/app/js/protocols/message.js');
-importScripts('/service_worker_boilerplate/app/js/protocols/store.js');
+importScripts('/service-worker-boilerplate/app/js/protocols/message.js');
+importScripts('/service-worker-boilerplate/app/js/protocols/store.js');
 
 var Protocol = function(methods, bridge) {
   this.store = new PromiseStore();

@@ -1,7 +1,7 @@
 'use strict';
 
-importScripts('/service_worker_boilerplate/app/js/service/utils.js');
-importScripts('/service_worker_boilerplate/app/js/protocols/protocol_helper.js');
+importScripts('/service-worker-boilerplate/app/js/service/utils.js');
+importScripts('/service-worker-boilerplate/app/js/protocols/protocol_helper.js');
 
 var protocol = new IPDLProtocol('service');
 
@@ -14,7 +14,7 @@ protocol.recvApplyUpdate = function(resolve, reject, args) {
     filesToUpdate++;
 
     caches.match(filename).then((function(filename, response) {
-      caches.open('service_worker_boilerplate-cache-v0').then((function(filename, cache) {
+      caches.open('service-worker-boilerplate-cache-v0').then((function(filename, cache) {
 
         var originalUrl = filename;
         cache.delete(originalUrl).then(function onDeleted() {

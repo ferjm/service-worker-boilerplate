@@ -76,9 +76,9 @@
 //  };
 //  
 
-importScripts('/service_worker_boilerplate/app/js/protocols/ipdl.js');
-importScripts('/service_worker_boilerplate/app/js/protocols/bridge.js');
-importScripts('/service_worker_boilerplate/app/js/protocols/protocol.js');
+importScripts('/service-worker-boilerplate/app/js/protocols/ipdl.js');
+importScripts('/service-worker-boilerplate/app/js/protocols/bridge.js');
+importScripts('/service-worker-boilerplate/app/js/protocols/protocol.js');
 
 var IPDLProtocol = function(name, target) {
   var ipdl = new IPDL(name);

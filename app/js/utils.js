@@ -25,4 +25,4 @@ function importScripts(script) {
   document.head.appendChild(element);
 }
 
-importScripts('/service_worker_boilerplate/app/js/string-polyfill.js');
+importScripts('/service-worker-boilerplate/app/js/string-polyfill.js');

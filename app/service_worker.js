@@ -1,7 +1,7 @@
 'use strict';
 
-importScripts('/service_worker_boilerplate/app/js/service/utils.js');
-importScripts('/service_worker_boilerplate/app/js/service/worker_api.js');
+importScripts('/service-worker-boilerplate/app/js/service/utils.js');
+importScripts('/service-worker-boilerplate/app/js/service/worker_api.js');
 
 debug("service_worker");
 var worker = new ServiceWorker();
@@ -9,10 +9,10 @@ var worker = new ServiceWorker();
 // lifecycle events
 worker.oninstall = function(e) {
   debug('oninstall');
-  importScripts('/service_worker_boilerplate/app/service_worker_files.js');
+  importScripts('/service-worker-boilerplate/app/service_worker_files.js');
 
   e.waitUntil(
-    caches.open('service_worker_boilerplate-cloud-cache-v0').then(function(cache) {
+    caches.open('service-worker-boilerplate-cloud-cache-v0').then(function(cache) {
       return cache.addAll(kCacheFiles);
     })
   );
