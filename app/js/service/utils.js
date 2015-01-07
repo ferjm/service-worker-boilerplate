@@ -1,6 +1,7 @@
 'use strict';
 
 importScripts('/service-worker-boilerplate/app/js/string-polyfill.js');
+importScripts('/service-worker-boilerplate/app/js/cache-polyfill.js');
 
 // XXX Firefox compat with latest spec
 if ('getServiced' in clients) {

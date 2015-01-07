@@ -6,7 +6,7 @@ var kCacheFiles = [
 
   // scripts
   '/service-worker-boilerplate/app/js/utils.js',
-  '/service-worker-boilerplate/app/js/sw.js',
+  '/service-worker-boilerplate/app/js/bootstrap.js',
   '/service-worker-boilerplate/app/js/string-polyfill.js',
 
   // service worker helpers
