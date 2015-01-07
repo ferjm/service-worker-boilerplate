@@ -1,7 +1,6 @@
 'use strict';
 
 importScripts('/service-worker-boilerplate/app/js/service/utils.js');
-importScripts('/service-worker-boilerplate/app/js/service/worker_api.js');
 
 debug("service_worker");
 var worker = new ServiceWorker();
